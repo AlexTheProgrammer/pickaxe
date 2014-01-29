@@ -11,7 +11,7 @@ class CsvReader
 	end
 	def total_value_in_stock
 		sum = 0.0
-		@books_in_stock.each{|book| + = book.price}
+		@books_in_stock.each{|book| sum += book.price}
 		sum
 	end
 	def number_of_each_isbn
