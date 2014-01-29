@@ -1,3 +1,5 @@
+require 'csv'
+require_relative 'book_in_stock' 
 class CsvReader
 	def initialize
 		@books_in_stock = []
@@ -8,14 +10,11 @@ class CsvReader
 		end
 	end
 	def total_value_in_stock
-
+		sum = 0.0
+		@books_in_stock.each{|book| + = book.price}
+		sum
 	end
 	def number_of_each_isbn
-
+		#
 	end
 end
-
-reader = CsvReader.new()
-reader.read_in_csv_data("file1.csv")
-reader.read_in_csv_data("file2.csv")
-puts "Total value of books in stock = #{reader.total_value_in_stock}"
