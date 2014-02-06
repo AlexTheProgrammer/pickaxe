@@ -7,7 +7,7 @@ class Monkeys
 		end
 	end
 	def monkey_says
-		puts "I'm a small #{@monkey_size}"
+		puts "I'm a #{@monkey_size}"
 	end
 end
 
